@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en-CA">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GBPro Cleaning | Camrose, AB | We Don't Cut Corners, We Clean Them</title>
+<meta name="description" content="GBPro Cleaning serves Camrose, Alberta and the surrounding area with house cleaning, commercial and office cleaning, and project cleaning using eco-friendly products.">
+<meta name="theme-color" content="#0868A1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --blue:#0868A1;
+  --blue-d:#06466f;
+  --ink:#0c2233;
+  --teal:#2AB1BC;
+  --teal-l:#d9f2f4;
+  --orange:#F09D4A;
+  --orange-d:#d9822b;
+  --cream:#FBF1E4;
+  --paper:#FFFDF9;
+  --line:rgba(12,34,51,.14);
+  --display:"Bricolage Grotesque","Trebuchet MS",system-ui,sans-serif;
+  --body:"DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --wrap:1180px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:84px;overflow-x:clip}
+body{overflow-x:clip;margin:0;font-family:var(--body);color:var(--ink);background:var(--paper);line-height:1.6;font-size:17px;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);line-height:1.04;margin:0;letter-spacing:-.02em}
+p{margin:0}
+.wrap{width:min(var(--wrap),100% - 40px);margin-inline:auto}
+.sr{position:absolute;left:-9999px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--ink);color:#fff;padding:10px 16px;border-radius:6px;z-index:100}
+.skip:focus{top:12px}
+
+/* corner-bracket motif: the whole brand idea */
+.corners{position:relative}
+.corners::before,.corners::after{content:"";position:absolute;width:34px;height:34px;pointer-events:none;border:0 solid var(--orange);z-index:3}
+.corners::before{top:-10px;left:-10px;border-top-width:5px;border-left-width:5px}
+.corners::after{bottom:-10px;right:-10px;border-bottom-width:5px;border-right-width:5px}
+.corners.teal::before,.corners.teal::after{border-color:var(--teal)}
+
+.btn{display:inline-flex;align-items:center;gap:10px;font:700 16px/1 var(--body);text-decoration:none;padding:17px 26px;border-radius:4px;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .2s,color .2s,box-shadow .2s}
+.btn svg{width:18px;height:18px;flex:none}
+.btn-o{background:var(--orange);color:#1b1206;box-shadow:5px 5px 0 var(--blue-d)}
+.btn-o:hover{transform:translate(-2px,-2px);box-shadow:8px 8px 0 var(--blue-d)}
+.btn-line{border-color:currentColor;color:var(--blue)}
+.btn-line:hover{background:var(--blue);color:#fff;border-color:var(--blue)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,summary:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+
+/* top bar */
+.bar{background:var(--blue-d);color:#e7f4fb;font-size:14px}
+.bar .wrap{display:flex;justify-content:space-between;gap:16px;padding:9px 0;flex-wrap:wrap}
+.bar a{text-decoration:none;font-weight:700}
+.bar a:hover{text-decoration:underline}
+.bar span{opacity:.85}
+
+/* header */
+header.site{position:sticky;top:0;z-index:50;background:rgba(255,253,249,.94);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+.brand svg{width:56px;height:48px}
+.brand b{font:800 23px/1 var(--display);color:var(--blue);letter-spacing:-.01em}
+.brand b i{font-style:normal;color:var(--teal);font-weight:700;display:block;font-size:11.5px;letter-spacing:.34em;margin-top:5px}
+.menu{display:flex;gap:6px;align-items:center}
+.menu a{text-decoration:none;font-weight:500;font-size:15.5px;padding:10px 14px;border-radius:4px}
+.menu a:hover{background:var(--cream)}
+.menu .btn{padding:13px 20px;font-size:15px;box-shadow:4px 4px 0 var(--blue-d)}
+.burger{display:none;background:none;border:2px solid var(--ink);border-radius:4px;width:46px;height:42px;cursor:pointer;padding:0}
+.burger span{display:block;width:20px;height:2px;background:var(--ink);margin:4px auto;transition:.2s}
+
+/* hero */
+.hero{background:var(--cream);position:relative;overflow:hidden;padding:64px 0 96px}
+.hero::before{content:"";position:absolute;right:-6%;top:0;bottom:0;width:46%;background:var(--blue)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:18px;background:repeating-linear-gradient(90deg,var(--blue) 0 36px,var(--teal) 36px 72px)}
+.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:1.12fr .88fr;gap:56px;align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 13px/1.5 var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--blue)}
+.eyebrow::before{content:"";width:34px;height:3px;background:var(--orange)}
+.hero h1{font-size:clamp(42px,6vw,84px);font-weight:800;margin:20px 0 22px;color:var(--ink)}
+.hero h1 .sq{position:relative;display:inline-block;color:var(--blue)}
+.hero h1 .sq::after{content:"";position:absolute;left:-3%;right:-3%;bottom:.04em;height:.2em;background:var(--teal);opacity:.55;z-index:-1;transform-origin:left;animation:wipe 1.1s .5s cubic-bezier(.7,0,.2,1) both}
+.hero h1 .rest{display:block;color:var(--blue)}
+@keyframes wipe{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+.hero p.lead{font-size:20px;max-width:34em;color:#2a4256}
+.cta{display:flex;flex-wrap:wrap;gap:16px;margin-top:32px}
+.proof{display:flex;flex-wrap:wrap;gap:12px 28px;margin-top:36px;padding-top:22px;border-top:2px dashed var(--line);font-size:15px;font-weight:500}
+.proof li{list-style:none;display:flex;align-items:center;gap:9px}
+.proof svg{width:20px;height:20px;color:var(--teal)}
+.proof{padding-left:0;margin-bottom:0}
+
+.heroart{position:relative;padding:18px 0 0 18px}
+.heroart .photo{aspect-ratio:4/5;overflow:hidden;background:#cfd8de;border-radius:2px;box-shadow:14px 14px 0 rgba(6,70,111,.45)}
+.heroart .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 20%}
+.ticket{position:absolute;left:-34px;bottom:-40px;width:min(290px,86%);background:#fff;border-radius:3px;padding:20px 22px 18px;box-shadow:0 18px 40px rgba(6,34,51,.28);transform:rotate(-2.2deg);border-top:8px solid var(--orange)}
+.ticket h2{font-size:15px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;color:var(--blue);display:flex;justify-content:space-between;align-items:center}
+.ticket h2 small{font:500 12px var(--body);letter-spacing:.04em;color:#6a7f90;text-transform:none}
+.ticket ul{list-style:none;margin:12px 0 0;padding:0}
+.ticket li{display:flex;gap:11px;align-items:center;padding:7px 0;border-bottom:1px dotted var(--line);font-weight:500;font-size:15.5px}
+.ticket li:last-child{border:0}
+.ticket .box{width:22px;height:22px;border:2px solid var(--blue);border-radius:3px;position:relative;flex:none}
+.ticket .box::after{content:"";position:absolute;left:5px;top:1px;width:7px;height:13px;border:solid var(--teal);border-width:0 4px 4px 0;transform:rotate(45deg) scale(0);transition:transform .35s cubic-bezier(.3,1.6,.5,1)}
+.ticket li.on .box::after{transform:rotate(45deg) scale(1)}
+.ticket li.on span{color:#6a7f90}
+.ticket li.on span{text-decoration:line-through;text-decoration-color:rgba(42,177,188,.7)}
+.ticket .stamp{position:absolute;right:14px;bottom:12px;border:3px solid var(--teal);color:var(--teal);font:800 15px/1 var(--display);letter-spacing:.1em;padding:6px 9px;border-radius:3px;transform:rotate(-9deg) scale(1.6);opacity:0;transition:.4s}
+.ticket.done .stamp{opacity:.9;transform:rotate(-9deg) scale(1)}
+
+/* ticker */
+.tickwrap{overflow:hidden;margin-top:-34px;padding:30px 0 22px;position:relative;z-index:5;pointer-events:none}
+.ticker{background:var(--ink);color:#fff;transform:rotate(-1.2deg);margin:0 -20px;padding:18px 0;overflow:hidden;position:relative;z-index:5;border-block:4px solid var(--orange)}
+.ticker .track{display:flex;gap:44px;width:max-content;animation:slide 38s linear infinite;font:800 clamp(20px,2.6vw,30px)/1 var(--display);letter-spacing:.01em;text-transform:uppercase}
+.ticker .track span{display:flex;align-items:center;gap:44px;white-space:nowrap}
+.ticker .track span::after{content:"";width:14px;height:14px;background:var(--teal);transform:rotate(45deg)}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* services as expanding panels */
+.services{padding:112px 0 96px}
+.head{display:flex;justify-content:space-between;align-items:flex-end;gap:32px;flex-wrap:wrap;margin-bottom:44px}
+.head h2{font-size:clamp(36px,5vw,62px);font-weight:800;max-width:11em}
+.head h2 em{font-style:normal;color:var(--blue)}
+.head p{max-width:27em;color:#3b5266}
+.panels{display:flex;gap:14px;height:560px}
+.panel{position:relative;flex:1;min-width:0;border:0;padding:0;overflow:hidden;cursor:pointer;color:#fff;text-align:left;background:var(--blue-d);border-radius:3px;transition:flex .6s cubic-bezier(.6,0,.2,1)}
+.panel.open{flex:3.4}
+.panel img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s,filter .5s;filter:saturate(.9)}
+.panel:not(.open) img{filter:grayscale(.5) brightness(.72)}
+.panel.open img{transform:scale(1.04)}
+.panel::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,34,51,0) 22%,rgba(6,34,51,.9) 100%)}
+.panel .num{position:absolute;top:18px;left:20px;z-index:2;font:800 15px var(--display);letter-spacing:.12em;background:var(--orange);color:#1b1206;padding:6px 10px;border-radius:2px}
+.panel .in{display:block;position:absolute;z-index:2;left:0;right:0;bottom:0;padding:26px 28px}
+.panel h3{font-size:clamp(25px,2.6vw,36px);font-weight:800}
+.panel .more{display:block;max-height:0;opacity:0;overflow:hidden;transition:max-height .6s,opacity .5s .1s;margin-top:0}
+.panel.open .more{max-height:300px;opacity:1;margin-top:14px}
+.panel .more p{color:#e6f1f7;font-size:16.5px;max-width:34em}
+.panel .more a{display:inline-block;margin-top:16px;font-weight:700;color:var(--orange);text-decoration:none;border-bottom:2px solid var(--orange)}
+.panel:not(.open) h3{font-size:clamp(20px,2vw,26px)}
+
+/* why: sticky left, standards on right */
+.why{background:var(--blue);color:#fff;padding:104px 0;position:relative;overflow:hidden}
+.why::before{content:"";position:absolute;left:-90px;bottom:-90px;width:300px;height:300px;border:48px solid rgba(255,255,255,.06)}
+.why .wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:72px;align-items:start}
+.why .stick{position:sticky;top:120px}
+.why .eyebrow{color:var(--orange)}
+.why h2{font-size:clamp(38px,5.4vw,70px);font-weight:800;margin:18px 0 22px}
+.why h2 em{font-style:normal;color:var(--orange)}
+.big{display:flex;align-items:baseline;gap:12px;margin-top:34px;padding:22px 24px;background:rgba(255,255,255,.1);border-left:6px solid var(--orange);max-width:420px}
+.big b{font:800 74px/1 var(--display);color:#fff}
+.big span{font-size:17px;line-height:1.35;color:#d7ebf6}
+.stds{list-style:none;margin:0;padding:0;counter-reset:s}
+.stds li{counter-increment:s;display:grid;grid-template-columns:78px 1fr;gap:18px;padding:30px 0;border-top:1px solid rgba(255,255,255,.28)}
+.stds li:last-child{border-bottom:1px solid rgba(255,255,255,.28)}
+.stds li::before{content:counter(s,decimal-leading-zero);font:800 54px/1 var(--display);color:transparent;-webkit-text-stroke:2px var(--teal)}
+.stds h3{font-size:27px;font-weight:700;margin-bottom:8px}
+.stds p{color:#d7ebf6}
+
+/* about */
+.about{padding:120px 0 104px;background:var(--paper)}
+.about .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:80px;align-items:center}
+.about .pic{position:relative;margin-left:14px}
+.about .pic .frame{aspect-ratio:3/2;overflow:hidden;border-radius:2px}
+.about .pic .f2{margin:18px 0 0 54px}
+.about .pic img{width:100%;height:100%;object-fit:cover}
+.about .pic .tag{position:absolute;left:-14px;top:-26px;background:var(--orange);color:#1b1206;font:800 19px/1.15 var(--display);padding:16px 20px;max-width:210px;box-shadow:6px 6px 0 var(--blue-d)}
+.about h2{font-size:clamp(34px,4.4vw,56px);font-weight:800;margin:16px 0 22px}
+.about p+p{margin-top:16px}
+.about .where{margin-top:28px;display:flex;gap:14px;align-items:center;background:var(--cream);padding:18px 20px;border-radius:3px}
+.about .where svg{width:30px;height:30px;color:var(--blue);flex:none}
+.about .where b{display:block;font-family:var(--display);font-size:19px}
+
+/* consult band + form */
+.consult{position:relative;color:#fff;padding:104px 0;background:var(--ink) url(images/gloves-bg.jpg) center/cover no-repeat;isolation:isolate}
+.consult::before{content:"";position:absolute;inset:0;background:linear-gradient(100deg,rgba(6,34,51,.95) 18%,rgba(8,104,161,.72));z-index:-1}
+.consult .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.consult h2{font-size:clamp(40px,5.8vw,78px);font-weight:800}
+.consult h2 em{font-style:normal;color:var(--orange)}
+.consult .lead{font-size:20px;margin-top:20px;max-width:26em;color:#dcecf6}
+.consult .tel{display:inline-flex;align-items:center;gap:14px;margin-top:30px;font:800 clamp(26px,3.4vw,40px)/1 var(--display);text-decoration:none;color:#fff}
+.consult .tel svg{width:44px;height:44px;padding:10px;background:var(--orange);color:#1b1206;border-radius:50%}
+.consult .mail{display:block;margin-top:12px;color:#cfe7f4}
+form.q{background:#fff;color:var(--ink);padding:34px 32px 30px;border-radius:3px}
+form.q h3{font-size:28px;font-weight:800;margin-bottom:4px}
+form.q .sub{color:#587083;font-size:15px;margin-bottom:20px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:block;font-weight:700;font-size:14px;margin:14px 0 6px}
+input,select,textarea{width:100%;font:500 16px var(--body);padding:13px 14px;border:2px solid #cdd8e0;border-radius:3px;background:#f9fbfc;color:var(--ink)}
+input:focus,select:focus,textarea:focus{border-color:var(--blue);background:#fff}
+textarea{min-height:104px;resize:vertical}
+form.q .btn{width:100%;justify-content:center;margin-top:22px}
+form.q .fine{font-size:13px;color:#6a7f90;margin-top:12px;text-align:center}
+
+/* faq */
+.faq{padding:104px 0;background:var(--cream)}
+.faq .wrap{display:grid;grid-template-columns:.7fr 1.3fr;gap:72px}
+.faq h2{font-size:clamp(34px,4.4vw,56px);font-weight:800;margin-top:14px}
+details{border-bottom:2px solid var(--line)}
+details:first-of-type{border-top:2px solid var(--line)}
+summary{list-style:none;cursor:pointer;font:700 21px/1.25 var(--display);padding:24px 48px 24px 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:4px;top:50%;transform:translateY(-50%);font:500 34px/1 var(--body);color:var(--blue);transition:.25s}
+details[open] summary::after{transform:translateY(-50%) rotate(45deg);color:var(--orange-d)}
+details p{padding:0 48px 26px 0;color:#34495b}
+
+/* footer */
+footer{background:#14202b;color:#cfdbe4;padding:72px 0 0}
+.fgrid{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:44px;padding-bottom:52px}
+footer .brand b{color:#fff}
+footer .brand{--m1:#fff}
+footer .tagline{margin-top:18px;font:700 19px/1.25 var(--display);color:#fff;max-width:14em}
+footer h4{font:800 13px var(--body);letter-spacing:.16em;text-transform:uppercase;color:var(--orange);margin:0 0 16px}
+footer ul{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+footer a{text-decoration:none}
+footer a:hover{color:#fff;text-decoration:underline}
+.legal{border-top:1px solid rgba(255,255,255,.14);padding:22px 0 26px;display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap;font-size:14.5px}
+.legal a{color:#fff;font-weight:700;border-bottom:2px solid var(--orange)}
+.legal a:hover{text-decoration:none;color:var(--orange)}
+
+/* mobile call bar */
+.mcall{display:none}
+
+/* reveal */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s,transform .8s}
+.rv.in{opacity:1;transform:none}
+
+@media (max-width:1020px){
+  .hero::before{display:none}
+  .hero .wrap{grid-template-columns:1fr;gap:70px}
+  .heroart{max-width:480px;margin-inline:auto 0;width:100%}
+  .why .wrap,.about .wrap,.consult .wrap,.faq .wrap{grid-template-columns:1fr;gap:48px}
+  .why .stick{position:static}
+  .fgrid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:820px){
+  .burger{display:block}
+  .menu{display:none;position:absolute;left:0;right:0;top:100%;background:var(--paper);flex-direction:column;align-items:stretch;padding:14px 20px 22px;border-bottom:1px solid var(--line);gap:2px}
+  .menu.open{display:flex}
+  .menu a{padding:14px 6px;font-size:18px;border-bottom:1px solid var(--line);border-radius:0}
+  .menu .btn{margin-top:14px;justify-content:center;border-bottom:2px solid transparent}
+  .bar span{display:none}
+  .panels{flex-direction:column;height:auto}
+  .panel,.panel.open{flex:none;height:auto;min-height:230px}
+  .panel .in{position:relative;padding:130px 22px 24px}
+  .panel .more{max-height:none;opacity:1;margin-top:12px}
+  .panel:not(.open) h3{font-size:clamp(25px,2.6vw,36px)}
+  .panel:not(.open) img{filter:none}
+  .services,.why,.about,.consult,.faq{padding-block:72px}
+  .row2{grid-template-columns:1fr}
+  .stds li{grid-template-columns:62px 1fr}
+  .stds li::before{font-size:42px}
+  .about .pic .f2{margin-left:28px}
+  body{padding-bottom:64px}
+  .mcall{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:60;background:var(--blue-d);box-shadow:0 -6px 20px rgba(0,0,0,.2)}
+  .mcall a{flex:1;text-align:center;padding:17px 8px;font-weight:700;color:#fff;text-decoration:none}
+  .mcall a+a{background:var(--orange);color:#1b1206}
+}
+@media (max-width:560px){
+  body{font-size:16.5px}
+  .hero{padding:44px 0 80px}
+  .ticket{left:-10px;bottom:-34px}
+  .fgrid{grid-template-columns:1fr}
+  .brand b{font-size:20px}
+  .brand svg{width:48px;height:42px}
+  .big b{font-size:60px}
+}
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .rv{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- GBPro mark, redrawn as vector from the supplied logo -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="mark" viewBox="0 0 120 100">
+    <path class="bl" fill="var(--m1,#0868A1)" d="M18 56 60 14l42 42h-11L60 25 29 56z"/>
+    <rect class="bl" fill="var(--m1,#0868A1)" x="84" y="16" width="9" height="20"/>
+    <g class="bl" fill="var(--m1,#0868A1)"><rect x="52" y="38" width="7" height="7"/><rect x="61" y="38" width="7" height="7"/><rect x="52" y="47" width="7" height="7"/><rect x="61" y="47" width="7" height="7"/></g>
+    <path d="M13 10 31 62" stroke="#2AB1BC" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <path fill="#2AB1BC" d="M25 62c-4 6-5 15 2 20 5 3 12 1 15-3-6-1-9-5-10-10-1-3-2-5-3-8z"/>
+    <path d="M90 68 77 82" stroke="var(--m1,#0868A1)" stroke-width="4" stroke-linecap="round" fill="none"/>
+    <rect class="bl" fill="var(--m1,#0868A1)" x="86" y="58" width="22" height="6" rx="1" transform="rotate(40 97 61)"/>
+    <path fill="#2AB1BC" d="M98 5l2.4 6.2L106 13.6l-5.6 2.4L98 22l-2.4-6L90 13.6l5.6-2.4z"/>
+    <path fill="#2AB1BC" d="M108 24l1.4 3.6 3.6 1.4-3.6 1.4L108 34l-1.4-3.6L103 29l3.6-1.4z"/>
+  </symbol>
+</svg>
+
+<div class="bar"><div class="wrap">
+  <span>Camrose, AB and surrounding area</span>
+  <span><a href="tel:+15878591432">+1 (587) 859-1432</a> &nbsp;·&nbsp; <a href="mailto:g.bacon@gbprocleaning.ca">g.bacon@gbprocleaning.ca</a></span>
+</div></div>
+
+<header class="site">
+  <div class="wrap nav">
+    <a class="brand" href="#top" aria-label="GBPro Cleaning home">
+      <svg aria-hidden="true"><use href="#mark"/></svg>
+      <b>GBPro<i>CLEANING</i></b>
+    </a>
+    <button class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav class="menu" id="menu" aria-label="Main">
+      <a href="#services">Services</a>
+      <a href="#why">Why GBPro</a>
+      <a href="#about">About</a>
+      <a href="#faq">FAQ</a>
+      <a class="btn btn-o" href="#contact">Get a quote</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">Camrose, Alberta · Cleaning done properly</span>
+      <h1>We don't cut <span class="sq">corners.</span> <span class="rest">We clean them.</span></h1>
+      <p class="lead">House cleaning, commercial and office cleaning, and project cleaning for floors, carpets and move-outs. Done with eco-friendly products, by people who care how it looks when they leave.</p>
+      <div class="cta">
+        <a class="btn btn-o" href="#contact">Get a free quote
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="tel:+15878591432">Call +1 (587) 859-1432</a>
+      </div>
+      <ul class="proof">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>40+ years combined experience</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Eco-friendly products</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m5 12.5 4.5 4.5L19 7.5"/></svg>Homes and businesses</li>
+      </ul>
+    </div>
+
+    <div class="heroart">
+      <div class="corners"><div class="photo"><img src="images/cleaner.jpg" alt="Cleaner carrying a broom and caddy down a staircase" width="696" height="833"></div></div>
+      <div class="ticket" id="ticket" aria-label="Example cleaning checklist">
+        <h2>Corner check <small>no skipping</small></h2>
+        <ul>
+          <li><i class="box"></i><span>Floors</span></li>
+          <li><i class="box"></i><span>Carpets</span></li>
+          <li><i class="box"></i><span>Kitchens and baths</span></li>
+          <li><i class="box"></i><span>The corners</span></li>
+        </ul>
+        <div class="stamp">CLEAN</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="tickwrap"><div class="ticker" aria-hidden="true">
+  <div class="track">
+    <span>Houses</span><span>Medical offices</span><span>Professional businesses</span><span>Commercial</span><span>Schools</span><span>Hospitality</span><span>High security</span>
+    <span>Houses</span><span>Medical offices</span><span>Professional businesses</span><span>Commercial</span><span>Schools</span><span>Hospitality</span><span>High security</span>
+  </div>
+</div></div>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="head rv">
+      <h2>Three ways we <em>get it spotless</em></h2>
+      <p>Tap a panel to open it. Not sure which one fits? Tell us what needs cleaning and we will point you the right way.</p>
+    </div>
+    <div class="panels rv">
+      <button class="panel open" aria-expanded="true">
+        <img src="images/floors.jpg" alt="Freshly cleaned and polished tile floor" loading="lazy">
+        <span class="num">01</span>
+        <span class="in"><h3>Project cleaning</h3>
+          <span class="more"><p>Need floors refinished, carpets deep cleaned, a move-out cleaned or a detailed once-off job? Tell us what you need and we will sort it.</p><a href="#contact">Ask about a project</a></span></span>
+      </button>
+      <button class="panel" aria-expanded="false">
+        <img src="images/carpet.jpg" alt="Clean carpeted office common room" loading="lazy">
+        <span class="num">02</span>
+        <span class="in"><h3>Commercial and office cleaning</h3>
+          <span class="more"><p>Professional, high-end cleaning at affordable cost for commercial and office buildings, with high-grade eco-friendly products that keep the people inside safe and healthy.</p><a href="#contact">Book a consult</a></span></span>
+      </button>
+      <button class="panel" aria-expanded="false">
+        <img src="images/bedroom.jpg" alt="Clean, tidy bedroom with desk and fridge" loading="lazy">
+        <span class="num">03</span>
+        <span class="in"><h3>House cleaning</h3>
+          <span class="more"><p>Your time matters. We use high-end eco-friendly products to clean your home and purify the air, so you can spend that time with the people you love.</p><a href="#contact">Get a home quote</a></span></span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="why" id="why">
+  <div class="wrap">
+    <div class="stick rv">
+      <span class="eyebrow">Why GBPro Cleaning</span>
+      <h2>The corners are where <em>trust</em> is built.</h2>
+      <p>Four decades of combined experience across homes, clinics, schools and high-security sites taught us one thing. The small stuff is the whole job.</p>
+      <div class="big"><b>40+</b><span>years combined in the cleaning industry</span></div>
+    </div>
+    <ol class="stds rv" style="margin:0;padding:0">
+      <li><div><h3>Integrity and honesty</h3><p>We build trust the plain way. We do what we said, and we tell you straight when something needs a different approach.</p></div></li>
+      <li><div><h3>Your needs come first</h3><p>Every home and workplace is different. We start with what matters to you, then clean to that standard.</p></div></li>
+      <li><div><h3>Always getting better</h3><p>We keep learning new ways to clean better and more efficiently, and to improve the health and wellness of the people in the spaces we look after.</p></div></li>
+      <li><div><h3>Light on the world</h3><p>Eco-friendly products and the least harmful impact we can manage, so your family, staff and pets are safe around the results.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="pic rv corners teal">
+      <div class="frame"><img src="images/floors.jpg" alt="Polished tile floor after a project clean" loading="lazy" width="560" height="380"></div>
+      <div class="frame f2"><img src="images/carpet.jpg" alt="Deep cleaned carpet in a community room" loading="lazy" width="559" height="380"></div>
+      <div class="tag">A smile on our clients' faces</div>
+    </div>
+    <div class="rv">
+      <span class="eyebrow">About GBPro</span>
+      <h2>Passionate about it, and it shows.</h2>
+      <p>After more than 40 years combined in the cleaning industry, working in house cleaning, medical offices, professional business, commercial, schools, hospitality and high security, we decided to take an approach we would always be passionate about: seeing a smile on our clients' faces.</p>
+      <p>We build trust through integrity and honesty and by putting our clients' needs first. We also take care of the people who work with us.</p>
+      <div class="where">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21s-7-6.2-7-11.2A7 7 0 0 1 19 9.8C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.8" r="2.6"/></svg>
+        <div><b>Serving Camrose, AB</b>and the surrounding area</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="consult" id="contact">
+  <div class="wrap">
+    <div class="rv">
+      <h2>Need some cleaning <em>advice?</em></h2>
+      <p class="lead">Contact us for a consult. Tell us what needs cleaning and we will tell you how we would tackle it.</p>
+      <a class="tel" href="tel:+15878591432"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>+1 (587) 859-1432</a>
+      <a class="mail" href="mailto:g.bacon@gbprocleaning.ca">g.bacon@gbprocleaning.ca</a>
+    </div>
+    <form class="q rv corners" id="quote" novalidate>
+      <h3>Get your free quote</h3>
+      <p class="sub">Takes one minute. We will get back to you.</p>
+      <div class="row2">
+        <div><label for="n">Your name</label><input id="n" name="name" autocomplete="name" required></div>
+        <div><label for="p">Phone</label><input id="p" name="phone" type="tel" autocomplete="tel" required></div>
+      </div>
+      <label for="s">What do you need?</label>
+      <select id="s" name="service">
+        <option>House cleaning</option>
+        <option>Commercial / office cleaning</option>
+        <option>Project cleaning (floors, carpets, move-out)</option>
+        <option>Not sure yet</option>
+      </select>
+      <label for="m">Tell us a bit about it</label>
+      <textarea id="m" name="message" placeholder="Size of the space, timing, anything we should know"></textarea>
+      <button class="btn btn-o" type="submit">Send my request</button>
+      <p class="fine" id="note">Opens your email app with the details filled in.</p>
+    </form>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="rv"><span class="eyebrow">Quick answers</span><h2>Before you call</h2></div>
+    <div class="rv">
+      <details><summary>Where do you work?</summary><p>We serve Camrose, Alberta and the surrounding area.</p></details>
+      <details><summary>What kinds of cleaning do you do?</summary><p>House cleaning, commercial and office cleaning, and project cleaning such as floor refinishing, deep carpet cleaning, move-out cleans and detailed cleaning.</p></details>
+      <details><summary>Are your products safe for kids and pets?</summary><p>We use high-grade, eco-friendly products to keep the people who matter to you safe, healthy and happy.</p></details>
+      <details><summary>Do you clean businesses as well as homes?</summary><p>Yes. Our team has worked in professional offices, medical offices, schools, hospitality, high-security sites and other commercial buildings.</p></details>
+      <details><summary>How do I get a quote?</summary><p>Fill in the form above, call +1 (587) 859-1432, or email g.bacon@gbprocleaning.ca. Tell us what needs cleaning and we will take it from there.</p></details>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="fgrid">
+      <div>
+        <a class="brand" href="#top" aria-label="GBPro Cleaning home"><svg aria-hidden="true"><use href="#mark"/></svg><b>GBPro<i>CLEANING</i></b></a>
+        <p class="tagline">We don't cut corners, we clean them.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="#services">Services</a></li><li><a href="#why">Why GBPro</a></li><li><a href="#about">About</a></li><li><a href="#faq">FAQ</a></li></ul></div>
+      <div><h4>Services</h4><ul><li>House cleaning</li><li>Commercial / office</li><li>Project cleaning</li></ul></div>
+      <div><h4>Contact</h4><ul>
+        <li><a href="tel:+15878591432">+1 (587) 859-1432</a></li>
+        <li><a href="mailto:g.bacon@gbprocleaning.ca">g.bacon@gbprocleaning.ca</a></li>
+        <li>Camrose, AB and surrounding area, Canada</li></ul></div>
+    </div>
+    <div class="legal">
+      <span>&copy; <span id="yr">2026</span> GBPro Cleaning. All rights reserved.</span>
+      <span>Design by <a href="https://www.dallaswebagency.us/" target="_blank" rel="noopener">Dallas Web Agency</a></span>
+    </div>
+  </div>
+</footer>
+
+<div class="mcall"><a href="tel:+15878591432">Call now</a><a href="#contact">Free quote</a></div>
+
+<script>
+(function(){
+  // year
+  document.getElementById('yr').textContent = new Date().getFullYear();
+
+  // mobile menu
+  var b=document.querySelector('.burger'), m=document.getElementById('menu');
+  b.addEventListener('click',function(){var o=m.classList.toggle('open');b.setAttribute('aria-expanded',o)});
+  m.addEventListener('click',function(e){if(e.target.tagName==='A'){m.classList.remove('open');b.setAttribute('aria-expanded','false')}});
+
+  // service panels
+  var ps=[].slice.call(document.querySelectorAll('.panel'));
+  function open(p){ps.forEach(function(x){var on=x===p;x.classList.toggle('open',on);x.setAttribute('aria-expanded',on)})}
+  ps.forEach(function(p){
+    p.addEventListener('click',function(e){if(e.target.closest('a'))return;open(p)});
+    p.addEventListener('mouseenter',function(){if(window.matchMedia('(hover:hover) and (min-width:821px)').matches)open(p)});
+    p.addEventListener('focus',function(){open(p)});
+  });
+
+  // corner-check ticket ticks itself off
+  var t=document.getElementById('ticket'), items=[].slice.call(t.querySelectorAll('li'));
+  var reduce=window.matchMedia('(prefers-reduced-motion:reduce)').matches;
+  function run(){
+    items.forEach(function(li){li.classList.remove('on')});t.classList.remove('done');
+    items.forEach(function(li,i){setTimeout(function(){li.classList.add('on');if(i===items.length-1)setTimeout(function(){t.classList.add('done')},350)},900+i*750)});
+  }
+  if(reduce){items.forEach(function(li){li.classList.add('on')});t.classList.add('done')}
+  else{run();setInterval(run,11000)}
+
+  // reveal on scroll
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});
+    rv.forEach(function(el){io.observe(el)});
+  }else rv.forEach(function(el){el.classList.add('in')});
+
+  // quote form: opens the visitor's email app, no backend needed
+  var f=document.getElementById('quote');
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var n=f.name.value.trim(), p=f.phone.value.trim();
+    if(!n||!p){document.getElementById('note').textContent='Please add your name and phone number.';return}
+    var body='Name: '+n+'\nPhone: '+p+'\nService: '+f.service.value+'\n\n'+f.message.value;
+    location.href='mailto:g.bacon@gbprocleaning.ca?subject='+encodeURIComponent('Quote request from '+n)+'&body='+encodeURIComponent(body);
+    document.getElementById('note').textContent='Thanks! Your email app should open now.';
+  });
+})();
+</script>
+</body>
+</html>
