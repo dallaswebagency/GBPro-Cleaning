@@ -1,6 +1,6 @@
 # GBPro Cleaning homepage redesign
 
-Standalone `index.html` (no build step). Open it in a browser or host the folder as-is.
+Self-contained `index.html`: logo and photos are embedded, so it works opened on its own or hosted. The `images/` folder holds the same files for reuse.
 
 - `images/` site photos (cropped from the live site) and logo files
 - `images/logo-mark.svg` vector redraw of the house, mop and squeegee mark (the only original supplied was a 100px JPG, kept as `logo-original-100px.jpg`)
